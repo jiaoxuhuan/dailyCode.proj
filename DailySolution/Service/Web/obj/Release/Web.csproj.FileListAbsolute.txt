@@ -1,0 +1,4 @@
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\bin\Web.dll
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\bin\Web.pdb
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\obj\Release\Web.dll
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\obj\Release\Web.pdb

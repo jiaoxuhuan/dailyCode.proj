@@ -1,0 +1,6 @@
+C:\DailySolution\RabbitMqReceive\bin\Debug\RabbitMqReceive.exe.config
+C:\DailySolution\RabbitMqReceive\bin\Debug\RabbitMqReceive.exe
+C:\DailySolution\RabbitMqReceive\bin\Debug\RabbitMqReceive.pdb
+C:\DailySolution\RabbitMqReceive\obj\Debug\RabbitMqReceive.csprojResolveAssemblyReference.cache
+C:\DailySolution\RabbitMqReceive\obj\Debug\RabbitMqReceive.exe
+C:\DailySolution\RabbitMqReceive\obj\Debug\RabbitMqReceive.pdb

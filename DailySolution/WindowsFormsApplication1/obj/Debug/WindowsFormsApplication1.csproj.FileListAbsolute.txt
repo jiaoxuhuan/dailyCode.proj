@@ -1,0 +1,9 @@
+C:\DailySolution\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\DailySolution\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\DailySolution\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\DailySolution\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache

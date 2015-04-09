@@ -1,0 +1,15 @@
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.exe.config
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.exe
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.pdb
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.csprojResolveAssemblyReference.cache
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.exe
+C:\DailyRecord\dailyCode\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.pdb
+C:\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.exe.config
+C:\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.exe
+C:\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.pdb
+C:\DailySolution\DailyConsoleApplication\obj\Debug\DailyConsoleApplication.csprojResolveAssemblyReference.cache
+C:\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.exe
+C:\DailySolution\DailyConsoleApplication\bin\Debug\DailyConsoleApplication.pdb
+C:\DailySolution\DailyConsoleApplication\bin\Debug\StackExchange.Redis.dll
+C:\DailySolution\DailyConsoleApplication\bin\Debug\StackExchange.Redis.pdb
+C:\DailySolution\DailyConsoleApplication\bin\Debug\StackExchange.Redis.xml

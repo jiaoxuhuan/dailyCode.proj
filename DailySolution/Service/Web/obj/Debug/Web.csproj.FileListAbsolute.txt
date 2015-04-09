@@ -1,0 +1,10 @@
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\bin\Web.dll
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\bin\Web.pdb
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\obj\Debug\Web.dll
+C:\DailyRecord\dailyCode\DailySolution\Service\Web\obj\Debug\Web.pdb
+C:\DailySolution\Service\Web\bin\Web.dll
+C:\DailySolution\Service\Web\bin\Web.pdb
+C:\DailySolution\Service\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\DailySolution\Service\Web\obj\Debug\Web.dll
+C:\DailySolution\Service\Web\obj\Debug\Web.pdb

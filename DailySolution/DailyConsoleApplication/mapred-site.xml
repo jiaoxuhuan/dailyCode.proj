@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+  <property>
+    <name>mapreduce.job.user.name</name>
+    <value>pc</value>
+  </property>
+
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+
+  <property>
+    <name>yarn.apps.stagingDir</name>
+    <value>/user/pc/staging</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobtracker.address</name>
+    <value>local</value>
+  </property>
+
+</configuration>

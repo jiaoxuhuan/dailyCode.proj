@@ -1,0 +1,6 @@
+C:\DailySolution\RabbitMqSend\bin\Debug\RabbitMqSend.exe.config
+C:\DailySolution\RabbitMqSend\bin\Debug\RabbitMqSend.exe
+C:\DailySolution\RabbitMqSend\bin\Debug\RabbitMqSend.pdb
+C:\DailySolution\RabbitMqSend\obj\Debug\RabbitMqSend.csprojResolveAssemblyReference.cache
+C:\DailySolution\RabbitMqSend\obj\Debug\RabbitMqSend.exe
+C:\DailySolution\RabbitMqSend\obj\Debug\RabbitMqSend.pdb

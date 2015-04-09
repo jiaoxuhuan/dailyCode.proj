@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdCodeJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stdCodeJson" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrtlResStatusList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPrtlResStatusListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPrtlResStatusListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUseLineList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="use_line_id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUseLineListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUseLineListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPtrlPlanList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPtrlPlanListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPtrlPlanListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastPtrlResList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastPtrlResListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastPtrlResListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhoneNumberList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPhoneNumberListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPhoneNumberListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSystemDateTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSystemDateTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSystemDateTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLinePtrlResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonEntity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLinePtrlResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetLinePtrlResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlPointRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonEntity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlPointRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPtrlPointRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlContenRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonEntity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlContenRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPtrlContenRecordResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonEntity" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPtrlUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPtrlUnitResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckVersion" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPrtlResStatusListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPrtlResStatusList" />
+  </wsdl:message>
+  <wsdl:message name="GetPrtlResStatusListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPrtlResStatusListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUseLineList" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUseLineListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPtrlPlanList" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPtrlPlanListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastPtrlResList" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastPtrlResListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumberList" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumberListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemDateTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSystemDateTime" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemDateTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSystemDateTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultSoapIn">
+    <wsdl:part name="parameters" element="tns:SetLinePtrlResult" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultSoapOut">
+    <wsdl:part name="parameters" element="tns:SetLinePtrlResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPtrlPointRecord" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPtrlPointRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPtrlContenRecord" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPtrlContenRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPtrlUnit" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPtrlUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionHttpGetIn">
+    <wsdl:part name="stdCodeJson" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListHttpGetIn">
+    <wsdl:part name="stdCodeJson" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPrtlResStatusListHttpGetIn" />
+  <wsdl:message name="GetPrtlResStatusListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListHttpGetIn">
+    <wsdl:part name="use_line_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListHttpGetIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListHttpGetIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListHttpGetIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemDateTimeHttpGetIn" />
+  <wsdl:message name="GetSystemDateTimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultHttpGetIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordHttpGetIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordHttpGetIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitHttpGetIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionHttpPostIn">
+    <wsdl:part name="stdCodeJson" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckVersionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListHttpPostIn">
+    <wsdl:part name="stdCodeJson" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPrtlResStatusListHttpPostIn" />
+  <wsdl:message name="GetPrtlResStatusListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListHttpPostIn">
+    <wsdl:part name="use_line_id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUseLineListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListHttpPostIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPtrlPlanListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListHttpPostIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLastPtrlResListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListHttpPostIn">
+    <wsdl:part name="jsonParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPhoneNumberListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemDateTimeHttpPostIn" />
+  <wsdl:message name="GetSystemDateTimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultHttpPostIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetLinePtrlResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordHttpPostIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlPointRecordHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordHttpPostIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlContenRecordHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitHttpPostIn">
+    <wsdl:part name="jsonEntity" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetPtrlUnitHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="DataTransferSoap">
+    <wsdl:operation name="CheckVersion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查版本，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:CheckVersionSoapIn" />
+      <wsdl:output message="tns:CheckVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载用户信息，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUserListSoapIn" />
+      <wsdl:output message="tns:GetUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检结果状态数据</wsdl:documentation>
+      <wsdl:input message="tns:GetPrtlResStatusListSoapIn" />
+      <wsdl:output message="tns:GetPrtlResStatusListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载使用路线数据，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUseLineListSoapIn" />
+      <wsdl:output message="tns:GetUseLineListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检计划，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetPtrlPlanListSoapIn" />
+      <wsdl:output message="tns:GetPtrlPlanListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载最新巡检结果，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetLastPtrlResListSoapIn" />
+      <wsdl:output message="tns:GetLastPtrlResListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检常用电话号码</wsdl:documentation>
+      <wsdl:input message="tns:GetPhoneNumberListSoapIn" />
+      <wsdl:output message="tns:GetPhoneNumberListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">同步当前时间</wsdl:documentation>
+      <wsdl:input message="tns:GetSystemDateTimeSoapIn" />
+      <wsdl:output message="tns:GetSystemDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">使用路线数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetLinePtrlResultSoapIn" />
+      <wsdl:output message="tns:SetLinePtrlResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检点数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlPointRecordSoapIn" />
+      <wsdl:output message="tns:SetPtrlPointRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检内容结果数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlContenRecordSoapIn" />
+      <wsdl:output message="tns:SetPtrlContenRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新设备状态，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlUnitSoapIn" />
+      <wsdl:output message="tns:SetPtrlUnitSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DataTransferHttpGet">
+    <wsdl:operation name="CheckVersion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查版本，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:CheckVersionHttpGetIn" />
+      <wsdl:output message="tns:CheckVersionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载用户信息，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUserListHttpGetIn" />
+      <wsdl:output message="tns:GetUserListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检结果状态数据</wsdl:documentation>
+      <wsdl:input message="tns:GetPrtlResStatusListHttpGetIn" />
+      <wsdl:output message="tns:GetPrtlResStatusListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载使用路线数据，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUseLineListHttpGetIn" />
+      <wsdl:output message="tns:GetUseLineListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检计划，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetPtrlPlanListHttpGetIn" />
+      <wsdl:output message="tns:GetPtrlPlanListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载最新巡检结果，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetLastPtrlResListHttpGetIn" />
+      <wsdl:output message="tns:GetLastPtrlResListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检常用电话号码</wsdl:documentation>
+      <wsdl:input message="tns:GetPhoneNumberListHttpGetIn" />
+      <wsdl:output message="tns:GetPhoneNumberListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">同步当前时间</wsdl:documentation>
+      <wsdl:input message="tns:GetSystemDateTimeHttpGetIn" />
+      <wsdl:output message="tns:GetSystemDateTimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">使用路线数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetLinePtrlResultHttpGetIn" />
+      <wsdl:output message="tns:SetLinePtrlResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检点数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlPointRecordHttpGetIn" />
+      <wsdl:output message="tns:SetPtrlPointRecordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检内容结果数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlContenRecordHttpGetIn" />
+      <wsdl:output message="tns:SetPtrlContenRecordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新设备状态，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlUnitHttpGetIn" />
+      <wsdl:output message="tns:SetPtrlUnitHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DataTransferHttpPost">
+    <wsdl:operation name="CheckVersion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">检查版本，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:CheckVersionHttpPostIn" />
+      <wsdl:output message="tns:CheckVersionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载用户信息，参数为巡检器编码对应的JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUserListHttpPostIn" />
+      <wsdl:output message="tns:GetUserListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检结果状态数据</wsdl:documentation>
+      <wsdl:input message="tns:GetPrtlResStatusListHttpPostIn" />
+      <wsdl:output message="tns:GetPrtlResStatusListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载使用路线数据，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetUseLineListHttpPostIn" />
+      <wsdl:output message="tns:GetUseLineListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检计划，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetPtrlPlanListHttpPostIn" />
+      <wsdl:output message="tns:GetPtrlPlanListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载最新巡检结果，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:GetLastPtrlResListHttpPostIn" />
+      <wsdl:output message="tns:GetLastPtrlResListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载巡检常用电话号码</wsdl:documentation>
+      <wsdl:input message="tns:GetPhoneNumberListHttpPostIn" />
+      <wsdl:output message="tns:GetPhoneNumberListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">同步当前时间</wsdl:documentation>
+      <wsdl:input message="tns:GetSystemDateTimeHttpPostIn" />
+      <wsdl:output message="tns:GetSystemDateTimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">使用路线数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetLinePtrlResultHttpPostIn" />
+      <wsdl:output message="tns:SetLinePtrlResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检点数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlPointRecordHttpPostIn" />
+      <wsdl:output message="tns:SetPtrlPointRecordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">巡检内容结果数据上传，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlContenRecordHttpPostIn" />
+      <wsdl:output message="tns:SetPtrlContenRecordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更新设备状态，参数为JSON串</wsdl:documentation>
+      <wsdl:input message="tns:SetPtrlUnitHttpPostIn" />
+      <wsdl:output message="tns:SetPtrlUnitHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataTransferSoap" type="tns:DataTransferSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckVersion">
+      <soap:operation soapAction="http://tempuri.org/CheckVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap:operation soapAction="http://tempuri.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <soap:operation soapAction="http://tempuri.org/GetPrtlResStatusList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <soap:operation soapAction="http://tempuri.org/GetUseLineList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <soap:operation soapAction="http://tempuri.org/GetPtrlPlanList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <soap:operation soapAction="http://tempuri.org/GetLastPtrlResList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <soap:operation soapAction="http://tempuri.org/GetPhoneNumberList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <soap:operation soapAction="http://tempuri.org/GetSystemDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <soap:operation soapAction="http://tempuri.org/SetLinePtrlResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <soap:operation soapAction="http://tempuri.org/SetPtrlPointRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <soap:operation soapAction="http://tempuri.org/SetPtrlContenRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <soap:operation soapAction="http://tempuri.org/SetPtrlUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataTransferSoap12" type="tns:DataTransferSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckVersion">
+      <soap12:operation soapAction="http://tempuri.org/CheckVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap12:operation soapAction="http://tempuri.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <soap12:operation soapAction="http://tempuri.org/GetPrtlResStatusList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <soap12:operation soapAction="http://tempuri.org/GetUseLineList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <soap12:operation soapAction="http://tempuri.org/GetPtrlPlanList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <soap12:operation soapAction="http://tempuri.org/GetLastPtrlResList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <soap12:operation soapAction="http://tempuri.org/GetPhoneNumberList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <soap12:operation soapAction="http://tempuri.org/GetSystemDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <soap12:operation soapAction="http://tempuri.org/SetLinePtrlResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <soap12:operation soapAction="http://tempuri.org/SetPtrlPointRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <soap12:operation soapAction="http://tempuri.org/SetPtrlContenRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <soap12:operation soapAction="http://tempuri.org/SetPtrlUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataTransferHttpGet" type="tns:DataTransferHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CheckVersion">
+      <http:operation location="/CheckVersion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <http:operation location="/GetUserList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <http:operation location="/GetPrtlResStatusList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <http:operation location="/GetUseLineList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <http:operation location="/GetPtrlPlanList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <http:operation location="/GetLastPtrlResList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <http:operation location="/GetPhoneNumberList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <http:operation location="/GetSystemDateTime" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <http:operation location="/SetLinePtrlResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <http:operation location="/SetPtrlPointRecord" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <http:operation location="/SetPtrlContenRecord" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <http:operation location="/SetPtrlUnit" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataTransferHttpPost" type="tns:DataTransferHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CheckVersion">
+      <http:operation location="/CheckVersion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <http:operation location="/GetUserList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrtlResStatusList">
+      <http:operation location="/GetPrtlResStatusList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUseLineList">
+      <http:operation location="/GetUseLineList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPtrlPlanList">
+      <http:operation location="/GetPtrlPlanList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastPtrlResList">
+      <http:operation location="/GetLastPtrlResList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberList">
+      <http:operation location="/GetPhoneNumberList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemDateTime">
+      <http:operation location="/GetSystemDateTime" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLinePtrlResult">
+      <http:operation location="/SetLinePtrlResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlPointRecord">
+      <http:operation location="/SetPtrlPointRecord" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlContenRecord">
+      <http:operation location="/SetPtrlContenRecord" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPtrlUnit">
+      <http:operation location="/SetPtrlUnit" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataTransfer">
+    <wsdl:port name="DataTransferSoap" binding="tns:DataTransferSoap">
+      <soap:address location="http://localhost:8000/DataTransfer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataTransferSoap12" binding="tns:DataTransferSoap12">
+      <soap12:address location="http://localhost:8000/DataTransfer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataTransferHttpGet" binding="tns:DataTransferHttpGet">
+      <http:address location="http://localhost:8000/DataTransfer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataTransferHttpPost" binding="tns:DataTransferHttpPost">
+      <http:address location="http://localhost:8000/DataTransfer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
